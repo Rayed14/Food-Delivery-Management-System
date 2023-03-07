@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.adminLoginController">
+   <top>
+      <AnchorPane prefHeight="161.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="163.0" fitWidth="610.0" layoutX="-1.0" layoutY="-1.0">
+               <image>
+                  <Image url="@bgImage.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="41.0" layoutY="23.0" text="Food Delivery Management System" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold Italic" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="189.0" layoutY="78.0" text="Admin Login Portal" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold Italic" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="248.0" prefWidth="600.0" style="-fx-background-color: #BCC7D4;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="173.0" layoutY="36.0" text="Username:">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="175.0" layoutY="86.0" text="Password:">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameAdmin" layoutX="300.0" layoutY="34.0" />
+            <PasswordField fx:id="passowrdLoginAdmin" layoutX="300.0" layoutY="84.0" />
+            <Button fx:id="adminLoginSubmit" layoutX="339.0" layoutY="138.0" mnemonicParsing="false" onAction="#adminPage" style="-fx-background-color: #850500;" text="Submit" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="invalidDetails" layoutX="172.0" layoutY="7.0" prefHeight="17.0" prefWidth="278.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="goBack" layoutX="222.0" layoutY="138.0" mnemonicParsing="false" onAction="#goBackAck" style="-fx-background-color: #850500;" text="Go Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

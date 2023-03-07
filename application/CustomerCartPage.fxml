@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #BCC7D4;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.customerCartPageController">
+   <children>
+      <ScrollPane layoutX="60.0" layoutY="156.0" prefHeight="177.0" prefWidth="480.0">
+         <content>
+            <TableView fx:id="OrderedItemsTable" prefHeight="179.0" prefWidth="479.0">
+               <columns>
+                  <TableColumn fx:id="FoodItemID" prefWidth="61.0" text="Item ID" />
+                  <TableColumn fx:id="FoodItemName" prefWidth="98.0" text="Item Name" />
+                  <TableColumn fx:id="FoodItemDescription" prefWidth="188.0" text="Ingredients" />
+                  <TableColumn fx:id="FoodItemPrice" prefWidth="131.0" text="Item Price" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <AnchorPane prefHeight="108.0" prefWidth="600.0" style="-fx-background-color: #075eea;">
+         <children>
+            <ImageView fitHeight="116.0" fitWidth="604.0" layoutY="-1.0">
+               <image>
+                  <Image url="@bgImage.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="201.0" layoutY="35.0" text="Customer Cart" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="ConfirmOrderButoon" layoutX="337.0" layoutY="358.0" mnemonicParsing="false" onAction="#ConfirmOrderandGotoPortal" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: #850500;" text="Confirm Order and Place" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="returnToMenu" layoutX="60.0" layoutY="358.0" mnemonicParsing="false" onAction="#toMenuPage" prefHeight="25.0" prefWidth="142.0" style="-fx-background-color: #850500;" text="Return to Menu" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="60.0" layoutY="130.0" text="Your selected items are shown below:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

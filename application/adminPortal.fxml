@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.adminPortalController">
+   <top>
+      <AnchorPane prefHeight="134.0" prefWidth="600.0" style="-fx-background-color: blue;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="136.0" fitWidth="600.0" layoutY="-2.0">
+               <image>
+                  <Image url="@bgImage.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="231.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Portal">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="116.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Food Delivery Managment System">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="264.0" prefWidth="600.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="189.0" fitWidth="334.0" layoutX="266.0" layoutY="8.0">
+               <image>
+                  <Image url="@foodDeliveryGif.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="216.0" fitWidth="329.0">
+               <image>
+                  <Image url="@restaurantLogoGif.gif" />
+               </image>
+            </ImageView>
+            <Button fx:id="authResButton" layoutX="76.0" layoutY="201.0" mnemonicParsing="false" onAction="#selectRestaurant" style="-fx-background-color: #850500;" text="Authorize Restaurants" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button fx:id="authRidButton" layoutX="364.0" layoutY="201.0" mnemonicParsing="false" onAction="#selectRider" style="-fx-background-color: #850500;" text="Authorize Riders" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button fx:id="logoutButt" layoutX="515.0" layoutY="14.0" mnemonicParsing="false" onAction="#logoutAct" style="-fx-background-color: #850500;" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+   </bottom>
+</BorderPane>

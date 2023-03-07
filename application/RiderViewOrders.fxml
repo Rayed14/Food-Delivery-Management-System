@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #BCC7D4;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.riderViewOrderController">
+   <children>
+      <ScrollPane layoutX="60.0" layoutY="157.0" prefHeight="176.0" prefWidth="480.0">
+         <content>
+            <TableView fx:id="OrdersTable" prefHeight="201.0" prefWidth="479.0">
+               <columns>
+                  <TableColumn fx:id="orderID" prefWidth="106.0" text="Order ID" />
+                  <TableColumn fx:id="OrderDate" prefWidth="78.0" text="Order Date" />
+                  <TableColumn fx:id="Orderstatus" prefWidth="85.0" text="Order Status" />
+                  <TableColumn fx:id="deliveryAddress" prefWidth="109.0" text="Delivery Address" />
+                  <TableColumn fx:id="rest" prefWidth="75.0" text="Restaurant" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <AnchorPane prefHeight="108.0" prefWidth="600.0" style="-fx-background-color: #075eea;">
+         <children>
+            <ImageView fitHeight="116.0" fitWidth="604.0" layoutY="-1.0">
+               <image>
+                  <Image url="@bgImage.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="231.0" layoutY="35.0" text="Your Orders" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="selectOrderButton" layoutX="407.0" layoutY="358.0" mnemonicParsing="false" onAction="#selectOrdertoComplete" style="-fx-background-color: #850500;" text="Complete Order" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="returnToPortal" layoutX="60.0" layoutY="358.0" mnemonicParsing="false" onAction="#toRiderPage" prefHeight="25.0" prefWidth="142.0" style="-fx-background-color: #850500;" text="Return to Portal" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="14.0" layoutY="127.0" text="These are your selected Orders">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

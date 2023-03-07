@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.riderRegistrationController">
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="434.0" style="-fx-background-color: #C5C9CF;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="103.0" layoutY="56.0" text="Rider Name:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="94.0" text="Rider Phone Number:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="105.0" layoutY="139.0" text="Rider Email:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="80.0" layoutY="257.0" text="Rider Password:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="76.0" layoutY="219.0" text="Rider Username:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="181.0" text="Rider License Number:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="registerButton" layoutX="243.0" layoutY="319.0" mnemonicParsing="false" onAction="#restaurantLoginPage" style="-fx-background-color: #850500;" text="Register" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="riderName" layoutX="207.0" layoutY="53.0" />
+            <TextField fx:id="riderPhNumber" layoutX="207.0" layoutY="91.0" />
+            <TextField fx:id="riderEmail" layoutX="207.0" layoutY="136.0" />
+            <TextField fx:id="riderLicenseNo" layoutX="207.0" layoutY="178.0" />
+            <TextField fx:id="riderUsername" layoutX="207.0" layoutY="216.0" />
+            <PasswordField fx:id="riderPassword" layoutX="207.0" layoutY="254.0" />
+            <Label layoutX="122.0" layoutY="14.0" text="Rider Registration">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="goBackButt" layoutX="122.0" layoutY="319.0" mnemonicParsing="false" onAction="#goBackAct" style="-fx-background-color: #850500;" text="Go Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="warning" layoutX="63.0" layoutY="286.0" prefHeight="19.0" prefWidth="273.0" textFill="RED">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="200.0">
+               <image>
+                  <Image url="@bgImage.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

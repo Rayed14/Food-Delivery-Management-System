@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #BCC7D4;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.updateMenuController">
+   <children>
+      <ScrollPane layoutY="163.0" prefHeight="173.0" prefWidth="413.0">
+         <content>
+            <TableView fx:id="updateFoodItemTable" prefHeight="179.0" prefWidth="413.0">
+               <columns>
+                  <TableColumn fx:id="itemID" prefWidth="63.0" text="Item ID" />
+                  <TableColumn fx:id="ItemName" prefWidth="98.0" text="Name of Item" />
+                  <TableColumn fx:id="ingredients" prefWidth="147.0" text="Ingredients" />
+                  <TableColumn fx:id="ItemPrice" prefWidth="88.0" text="Price of Item" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <AnchorPane prefHeight="108.0" prefWidth="600.0" style="-fx-background-color: #075eea;">
+         <children>
+            <ImageView fitHeight="116.0" fitWidth="604.0" layoutY="-1.0">
+               <image>
+                  <Image url="@bgImage.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="225.0" layoutY="40.0" text="Update Menu" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="updateFoodButton" layoutX="398.0" layoutY="355.0" mnemonicParsing="false" onAction="#updateFoodItem" style="-fx-background-color: #850500;" text="Update Food Item" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="returnToPortal" layoutX="60.0" layoutY="358.0" mnemonicParsing="false" onAction="#toRestaurantPage" prefHeight="25.0" prefWidth="142.0" style="-fx-background-color: #850500;" text="Return to Portal" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="8.0" layoutY="134.0" text="Select the item and the column you want to update:">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="449.0" layoutY="153.0" text="Item Name:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="newName" layoutX="419.0" layoutY="175.0" />
+      <Label layoutX="437.0" layoutY="212.0" text="Item Ingredients:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="newIngredients" layoutX="420.0" layoutY="231.0" prefHeight="35.0" prefWidth="147.0" />
+      <Label layoutX="458.0" layoutY="275.0" text="Item Price:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="newPrice" layoutX="420.0" layoutY="295.0" />
+      <Label fx:id="warning" layoutX="423.0" layoutY="136.0" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
